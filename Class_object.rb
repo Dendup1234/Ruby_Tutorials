@@ -1,7 +1,21 @@
 class Person
-    @@no_of_customers = 0
+
+    def initialize(name,age)
+        @name = name
+        @age = age
+    end
+
+    def name
+        puts "This is my #{@name}"
+    end
+    
+    def description 
+        puts "This is my #{@name} and i am #{@age} year old"
+    end
 end
 
-dendup = Person.new
+#Creating a object in the ruby
 
-puts  (dendup.no_of_customers)
+Person1 = Person.new('dendup',15)
+Person1.name
+Person1.description
